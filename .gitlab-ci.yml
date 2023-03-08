@@ -1,0 +1,9 @@
+variables:
+  PROD_BASE_DOMAIN: 'octape.io'
+  INGRESS_HOSTNAME: 'app'
+  SKIP_TESTS: 'true'
+  RELEASE_SCRIPT_ARGS: '--set app.containerPort=8080'
+
+include:
+  - project: 'devops/pipeline'
+    file: '/templates/dsync-auto.gitlab-ci.yml'

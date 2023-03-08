@@ -1,0 +1,52 @@
+@import '~bulma/sass/utilities/_all';
+
+// setup colors
+$primary: #23195a;
+$primary-light: #74b9ff;
+$primary-dark: #23195a;
+$primary-invert: findColorInvert($primary);
+
+$secondary: #f1c40f;
+$secondary-light: #66ffa6;
+$secondary-dark: #00b248;
+$secondary-invert: findColorInvert($secondary);
+
+$dark-grey: #23195a;
+$dark: #23195a;
+$dark-invert: findColorInvert($dark);
+$darker: #23195a;
+
+$dark-green: #154629;
+$grey: #bdc3c7;
+$accent-grey: #F9F8FB;
+$white-accent: rgb(248, 248, 248);
+
+// units of measure
+$header-height: 3rem;
+$page-padding: 1.5rem;
+
+$menu-item-active-background-color: #402f85;
+$menu-item-active-color: white;
+$menu-item-color: #d2ccf0;
+$menu-label-color: #a59dd3;
+$menu-item-hover-background-color: #23195a;
+$menu-item-hover-color: white;
+
+// -- styles -------------------------------
+.spacer {
+  flex-grow: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.vertical {
+    flex-direction: column;
+  }
+}
+
+.no-margin {
+  margin: unset;
+}
